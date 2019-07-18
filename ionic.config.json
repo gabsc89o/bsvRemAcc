@@ -1,0 +1,7 @@
+{
+  "name": "bsvRemAcc",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
