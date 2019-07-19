@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-text class="title" color="dark"><h4>Autenticación / Authentication</h4></ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+	<br>
+	<ion-item color="dark">
+		<ion-text class="text">Usuario / User</ion-text>
+	</ion-item>
+	<ion-item color="dark">
+	<ion-input class="input" type="text" placeholder="  Ingresar Usuario" color="dark" [(ngModel)]="user"></ion-input>
+	</ion-item>
+	<br>
+	<ion-item color="dark">
+		<ion-text class="text">Contraseña / Password</ion-text>
+	</ion-item>
+	<ion-item color="dark">
+	<ion-input class="input" type="password" placeholder="  Ingresar Contraseña" color="dark" [(ngModel)]="password"></ion-input>
+	</ion-item>
+	<br>
+	<ion-item class="check">
+		<ion-checkbox color="medium"></ion-checkbox>
+		<ion-text class="text2" color="dark">Recordar sesión / Remember me</ion-text>
+	</ion-item>
+	<br>
+	<ion-button class="button" expand="block" color="light" (click)="goToRemote()">Entrar / Login</ion-button>
+</ion-content>
+
+<ion-footer>
+	<ion-toolbar color="dark" mode="ios">
+    	<ion-icon class="home" name="home" color="light" (click)="goToHome()"></ion-icon>
+  	</ion-toolbar>
+</ion-footer>

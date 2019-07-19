@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-text class="title" color="dark"><h3>Bienvenido / Welcome</h3></ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+	<br>
+	<ion-item color="dark">
+		<ion-text class="text" >Seleccione el modo de conexión / Set the connection mode</ion-text>
+	</ion-item>
+	<br><br>
+	<ion-button class="button" expand="block" color="light" (click)="goToAuth()">Remoto / Remote </ion-button>
+	<br>
+	<ion-button class="button" expand="block" color="light" (click)="openLocal()">Local</ion-button>
+	<br>
+	<ion-button class="button" expand="block" color="light">Cerrar sesión / Log out</ion-button>
+	<ion-item color="dark">
+		<ion-label class="version">Versión 1.6.0</ion-label>
+	</ion-item>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark" mode="ios">
+    <ion-title>EYPOOLS</ion-title>
+  </ion-toolbar>
+</ion-footer>
