@@ -1,5 +1,10 @@
 <ion-header>
+
   <ion-toolbar class="header">
+  	<ion-button class="buttonAuth" (click)="goToHome()" slot="start">
+  		<ion-icon class="home" name="home" color="dark" ></ion-icon>
+  	</ion-button>
+  	
     <ion-text class="title" color="dark"><h4>Autenticación / Authentication</h4></ion-text>
   </ion-toolbar>
 </ion-header>
@@ -21,15 +26,9 @@
 	</ion-item>
 	<br>
 	<ion-item class="check">
-		<ion-checkbox color="medium"></ion-checkbox>
+		<ion-checkbox color="medium" [(ngModel)]="entry"></ion-checkbox>
 		<ion-text class="text2" color="dark">Recordar sesión / Remember me</ion-text>
 	</ion-item>
 	<br>
 	<ion-button class="button" expand="block" color="light" (click)="goToRemote()">Entrar / Login</ion-button>
 </ion-content>
-
-<ion-footer>
-	<ion-toolbar color="dark" mode="ios">
-    	<ion-icon class="home" name="home" color="light" (click)="goToHome()"></ion-icon>
-  	</ion-toolbar>
-</ion-footer>
